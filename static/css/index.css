@@ -1,0 +1,80 @@
+#fej{
+    padding: 10em 0 1em 0;
+    background-image: url("../img/iigen.png");
+    background-size: auto 175%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 60vh;
+
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: 34.5% 34.5% 1fr;
+}
+#fej h1{
+    grid-column: 2;
+    grid-row: 4;
+
+    height: fit-content;
+    width: fit-content;
+
+    justify-self: center;
+    align-self: flex-end;
+}
+
+#fej .thing{
+    position: relative;
+    font-size: 20pt;
+    padding-inline: 60px;
+    opacity: 25%;
+}
+#fej .left{
+    grid-column: 1;
+    justify-self: left;
+}
+#fej .left::before, #fej .right::after{
+    content: "";
+    background: var(--white);
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 3px;
+    border-radius: 10px;
+}
+#fej .left::before{
+    left: 0;
+}
+#fej .right::after{
+    right: 0;
+}
+#fej .right{
+    grid-column: 3;
+    justify-self: right;
+}
+#fej .things .t1{
+    grid-row: 1;
+}
+#fej .things .t2{
+    grid-row: 2;
+}
+#fej .things .t3{
+    grid-row: 3;
+}
+
+
+
+
+#work{
+    
+}
+
+
+.projekt img{
+    height: 200px;
+}
+
+
+
+
+
+#contactend{height: 50px;}
