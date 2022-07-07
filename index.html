@@ -22,6 +22,7 @@
     <header>
         <a href="index" id="logolink"><img src="static/img/njavor_white.png" alt=""></a>
         <nav>
+            <a href="">Projects</a>
             <a href="">Work</a>
             <a href="">About</a>
             <a href="">Contact</a>
@@ -36,7 +37,7 @@
             <h1>nikolett jávor</h1>
         </section>
         <section id="work" class="green">
-            <h2>Work</h2>
+            <h2>Projects</h2>
             <div class="content">
                 <article class="projekt">
                     <img src="static/img/work/mult.png" alt="">
@@ -56,6 +57,18 @@
         <section id="contact" class="black">
             <h2>Contact me:</h2>
         </section>
+
+        <form method="POST" action="https://formsubmit.co/your@email.com">
+            <input type="text" name="name" required  id="contact-name" placeholder="name">
+            <input type="email" name="email" required id="contact-email" placeholder="email">
+            <!--<input type="hidden" name="_next" value="szlgbp.hu/sikeres_kapcsolatfelvetel.html">-->
+            <textarea name="text" id="contact-message" cols="30" rows="10"></textarea>
+            <button type="submit">
+                <span id="kuldes">Send</span>
+            </button>
+            <input type="hidden" name="_subject" value="New submission!">
+        </form>
+
     </main>
 
     <footer>
@@ -63,6 +76,7 @@
         <ul class="social-media">
             <!-- <li>Youtube</li>
             <li>Patreon</li> -->
+            <li>GitHub</li>
             <li>Facebook</li>
             <li>Instagram</li>
             <li>Twitter</li>

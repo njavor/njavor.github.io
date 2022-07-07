@@ -1,11 +1,13 @@
 h1,h2,h3{
     font-family: 'Prompt', sans-serif;
+    line-height: 100%;
 }
 h1{
     font-size: 45pt;
     font-weight: 700;
     letter-spacing: 5px;
     word-spacing: 20px;
+    /* font-family: var(--mmoderno); */
 }
 h2{
     font-size: 35pt;
