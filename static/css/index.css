@@ -1,80 +1,73 @@
 #fej{
-    padding: 10em 0 1em 0;
-    background-image: url("../img/iigen.png");
-    background-size: auto 175%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 60vh;
-
-    display: grid;
-    grid-template-columns: 30% 1fr 30%;
-    grid-template-rows: 34.5% 34.5% 1fr;
+    margin-block: -100px 7vh;
+    height: 100vh;,    gap: .5em;
 }
-#fej h1{
-    grid-column: 2;
-    grid-row: 4;
-
-    height: fit-content;
-    width: fit-content;
-
-    justify-self: center;
-    align-self: flex-end;
+#fej h3{
+    font-size: 22pt;
+    font-weight: 400;
+    font-family: var(--wsans);
+    opacity: .5;
 }
-
-#fej .thing{
-    position: relative;
-    font-size: 20pt;
-    padding-inline: 60px;
-    opacity: 25%;
-}
-#fej .left{
-    grid-column: 1;
-    justify-self: left;
-}
-#fej .left::before, #fej .right::after{
-    content: "";
-    background: var(--white);
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 50px;
-    height: 3px;
-    border-radius: 10px;
-}
-#fej .left::before{
-    left: 0;
-}
-#fej .right::after{
-    right: 0;
-}
-#fej .right{
-    grid-column: 3;
-    justify-self: right;
-}
-#fej .things .t1{
-    grid-row: 1;
-}
-#fej .things .t2{
-    grid-row: 2;
-}
-#fej .things .t3{
-    grid-row: 3;
-}
-
-
-
-
-#work{
     
+    
+.awork{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-
-.projekt img{
-    height: 200px;
+.thecontent{
+    width: fit-content;
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+    
+#work img{height: 250px;}
+.text{
+    margin-inline: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+    
+p{
+    width: 75%;
+    font-size: 20pt;
+}
+    
+.awork.awork.left{text-align: left;}
+.awork.center{
+    align-items: center;
+    text-align: center;
+}
+.awork.right{
+    align-items: flex-end;
+    text-align: right;
+}
+.awork.left .thecontent{margin-left: 15%;}
+.awork.right .thecontent{
+    margin-right: 15%;
+    flex-direction: row-reverse;
+}
+.awork.right .text{
+    align-items: flex-end;
+}
+.awork path{scale: 2;}
 
 
 
-
-
-#contactend{height: 50px;}
+#about .text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contact{}

@@ -1,30 +1,38 @@
 header{
     z-index: 5;
-    padding-inline: 2%;
-
-    position: sticky;
-    width: 96%;
+    padding-inline: 7%;
+    
+    position: fixed;
+    width: 86%;
     top: 0;
     left: 0;
+    
     height: 60px;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     background-color: black;
     color: var(--white);
     font-family: var(--mmoderno);
     font-weight: 600;
 }
-header #logolink, header img, footer img{
-    height: 55px;
+    
+
+header #logolink, header img{height: 55px;}
+header #logolink{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-
-
+header #logolink h1{font-size: 25pt;}
+header #logolink.hidden{
+    transform: translateY(-100px);
+    transition: all .5s;
+}
+header #logolink.show{transform: translateY(0);}
 header nav{
-    margin-right: 3vw;
-
     display: flex;
     justify-content: right;
     align-items: center;
