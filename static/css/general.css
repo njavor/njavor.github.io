@@ -40,7 +40,10 @@ h1{
     letter-spacing: 5px;
     word-spacing: 20px;
 }
-h2{font-size: 45pt;}
+h2{
+    font-size: 45pt;
+    margin-bottom: .5em;
+}
 h3{font-size: 40pt;}
 h4{font-size: 30pt;}
 h5{color: rgb(var(--white), .5);}
@@ -55,9 +58,28 @@ a{
     text-decoration: none;
     transition: .2s;
 }
-a:hover{
+a:hover, button:hover > a{
     color: var(--green);
     filter: none;
+}
+
+button{
+    margin: 2em;
+    padding: 1em;
+    background-color: var(--green);
+    color: var(--black);
+
+    font-weight: 700;
+    font-size: 16pt;
+    border: none;
+    border-radius: 10px;
+
+    transition: .2s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--white);
+    transform: translateY(-2px);
 }
 
 li{list-style: none;}

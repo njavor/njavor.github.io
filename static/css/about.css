@@ -1,0 +1,46 @@
+article{
+    width: 70%;
+    margin: 2em;
+
+    display: grid;
+    grid-template-columns: 150px fit-content(100%);
+    align-items: flex-start;
+}
+article img{
+    justify-self: center;
+    height: 150px;
+    filter: brightness(0) invert(1);
+}
+article .text h3{
+    margin-block: 12px 8px;
+    font-family: var(--wsans);
+    font-size: 28pt;
+    font-weight: 700;
+}
+article .text h4{
+    font-size: 22pt;
+    font-weight: 400;
+}
+article .text h5{
+    margin-block: 3px 7px;
+    font-size: 16pt;
+    font-weight: 300;
+}
+    
+article .text{
+    margin-inline: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+    
+article.left{text-align: left;}
+article.right{
+    flex-direction: row-reverse;
+    justify-content: right;
+    text-align: right;
+}
+article.right .text{
+    align-items: flex-end;
+}

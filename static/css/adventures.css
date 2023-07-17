@@ -1,0 +1,15 @@
+article{
+    margin-inline: 15%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+article #img1{
+    height: 200px;
+    position: absolute;
+}
+

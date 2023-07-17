@@ -1,0 +1,11 @@
+#docs ul{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+#docs ul li{
+    list-style: disc;
+
+    font-size: 16pt;
+}
