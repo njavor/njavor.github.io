@@ -1,11 +1,13 @@
+#docs{
+    margin-top: 5rem;
+}
 #docs ul{
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: .5em;
+    gap: 2em;
 }
 #docs ul li{
-    list-style: disc;
-
     font-size: 16pt;
+    text-align: center;
 }
