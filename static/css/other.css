@@ -1,13 +1,67 @@
 #docs{
     margin-top: 5rem;
+    gap: 1rem;
 }
-#docs ul{
-    width: 60%;
+
+#docs article{
+    padding: 2rem 5%;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: fit-content(100%) 1fr fit-content(100%);
+    align-items: center;
+    gap: 3em;
+
+    background-color: var(--l-black);
+    border-radius: 20px;
+
+    transition: .3s;
+}
+#docs article:hover{
+    background-color: var(--d-gray);
+    scale: 1.01;
+}
+
+#docs img{
+    height: 225px;
+    max-width: 147px;
+    object-fit: contain;
+    transition: scale .25s ease-out;
+}
+#docs article:hover img{
+    scale: 1.1;
+}
+
+#docs article div{
     display: flex;
     flex-direction: column;
-    gap: 2em;
+
 }
-#docs ul li{
-    font-size: 16pt;
-    text-align: center;
+
+#docs article .leiras{
+    margin-block: 2rem;
+    align-self: flex-start;
+}
+#docs .leiras a:hover{
+    color:inherit;
+}
+#docs .leiras h3{
+    font-weight: 500;
+}
+#docs .leiras span{
+    margin-block: .3em 2em;
+    font-style: italic;
+}
+
+#docs .buttons{
+    align-items: end;
+    gap: 1rem;
+}
+#docs .buttons a{
+    width: 100%;
+}
+#docs .buttons button{
+    width: 100%;
+    margin:0;
+    font-size: 14pt;
 }

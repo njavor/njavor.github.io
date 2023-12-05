@@ -1,22 +1,41 @@
 :root{
     /* colors */
-    --black: #000;
-    --gray: #283a42;
+    --black: #080808;
+    --l-black: #141414;
+    --d-gray: #1d1d1d;
     --lgray: #6E8189;
-    --white: #fff;
-    --green: #2ca08f;
+    --white: #e0f1ef;
+    --primary: #2ca08f; /* zold */
     --yellow: #ffdd35;
     
     /* fonts */
-    --mmoderno: 'MuseoModerno', cursive;
+    --prompt: 'Prompt', sans-serif;
     --wsans: 'Work Sans', sans-serif;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --primary: #53b9aa;
+    }
+}
+/* @media (prefers-color-scheme: light) {
+    :root{
+        --primary: #2ca08f;
+        --black: #e0f1ef;
+        --white: #000;
+    }
+} */
+
+
 
 *{
     margin: 0;
     padding: 0;
     font-family: var(--wsans);
 }
+
+
+
 
 html, body{height: 100%;}
 body{
@@ -30,22 +49,22 @@ main{
 }
 
 h1,h2,h3{
+    width: fit-content;
     font-family: 'Prompt', sans-serif;
     line-height: 100%;
-    width: fit-content;
+    font-weight: 600;
 }
 h1{
-    font-size: 50pt;
-    font-weight: 700;
-    letter-spacing: 5px;
-    word-spacing: 20px;
+    font-size: 42pt;
+    letter-spacing: 2px;
+    word-spacing: 10px;
 }
 h2{
-    font-size: 45pt;
+    font-size: 32pt;
     margin-bottom: .5em;
 }
-h3{font-size: 40pt;}
-h4{font-size: 30pt;}
+h3{font-size: 24pt;}
+h4{font-size: 20pt;}
 h5{color: rgb(var(--white), .5);}
 
 p{
@@ -59,14 +78,14 @@ a{
     transition: .2s;
 }
 a:hover, button:hover > a{
-    color: var(--green);
+    color: var(--primary);
     filter: none;
 }
 
 button{
     margin: 2em;
     padding: 1em;
-    background-color: var(--green);
+    background-color: var(--primary);
     color: var(--black);
 
     font-weight: 700;
@@ -94,6 +113,6 @@ svg{
 .show{opacity: 1;}
 
 .active{
-    color: var(--green);
+    color: var(--primary);
     filter: contrast(.5);
 }

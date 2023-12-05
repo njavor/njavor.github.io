@@ -39,7 +39,7 @@ section.white{
     color: var(--black);
 }
 section.green{
-    background-color: var(--green);
+    background-color: var(--primary);
     color: var(--white);
 }
 section.yellow{

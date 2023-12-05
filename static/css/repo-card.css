@@ -1,3 +1,20 @@
+.repo-deck{
+    width: 85%;
+
+    grid-gap: 1em 1em;
+    display: grid;
+    gap: 1em 1em;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 768px){
+    .repo-deck {
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+}
+
+
 .repo-card{
     margin: 1em;
     padding: 2em;
@@ -16,7 +33,7 @@
     cursor: pointer;
 }
 .repo-card:hover{
-    background-color: var(--green);
+    background-color: var(--primary);
     box-shadow: 0 0 16px #d9dbdf;
     color: var(--white);
 }
@@ -28,6 +45,10 @@
     height: 30px;
 
     filter: invert(1);
+}
+.repo-card i{
+    grid-area: icon;
+    font-size: 20pt;
 }
 
 
