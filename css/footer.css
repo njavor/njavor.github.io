@@ -1,9 +1,9 @@
 footer{
     position: relative;
     padding: 1em 7% 2em 7%;
-    background-color: var(--black);
+    background-color: var(--bgColor);
     text-align: center;
-    color: var(--white);
+    color: var(--textColor);
 
     display: flex;
     flex-direction: column;
@@ -11,15 +11,6 @@ footer{
     align-items: center;
 
     z-index: 10;
-}
-footer img{
-    height: 30px;
-    filter: invert(46%) sepia(78%) saturate(372%) hue-rotate(122deg) brightness(99%) contrast(88%);
-    transition: .2s;
-    opacity: .5;
-}
-footer a img:hover{
-    opacity: 1;
 }
 
 footer #logo{

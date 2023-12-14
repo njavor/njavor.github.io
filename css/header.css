@@ -13,27 +13,31 @@ header{
     justify-content: space-between;
     align-items: center;
     
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--bgColor);
+    color: var(--textColor);
     font-weight: 600;
 }
     
 
-header #logolink, header img{height: 46px;}
+header #logolink, header img{
+    height: 46px;
+}
+body.light-mode header img{
+    filter: invert(1);
+}
+
 header #logolink{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-header #logolink h1{
-    font-size: 25pt;
-    letter-spacing: 2px;
 }
 header #logolink.hidden{
     transform: translateY(-100px);
     transition: all .5s;
 }
 header #logolink.show{transform: translateY(0);}
+
+
 header nav{
     display: flex;
     justify-content: right;

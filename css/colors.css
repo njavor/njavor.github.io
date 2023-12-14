@@ -1,0 +1,75 @@
+:root{
+    /* colors */
+    --fekete: #000;
+    --feher: #fff;
+
+    --black: #080808;
+    --l-black: #141414;
+    --d-gray: #1d1d1d;
+    --gray: #6E8189;
+    --d-white: #C7E6E2;
+    --white: #e0f1ef;
+    
+    --m-green: #53b9aa;
+    --green: #2ca08f;
+    
+    /* default color scheme - dark */
+    color-scheme: dark light;
+    --bgColor: var(--black);
+    --textColor: var(--white);
+    --primary: var(--m-green);
+    
+    --bgLight: var(--l-black);
+    --highlight: var(--d-gray);
+    --scrollbarThumb: var(--d-gray);
+}
+
+body.light-mode {
+    --bgColor: var(--white);
+    --textColor: var(--black);
+    --primary: var(--green);
+    
+    --bgLight: var(--d-white);
+    --highlight: var(--feher);
+    --scrollbarThumb: var(--d-white);
+}
+
+#color-scheme-toggle{
+    margin:0;
+    padding:5px;
+    
+    background-color: transparent;
+    color: var(--textColor);
+}
+body.light-mode #color-scheme-toggle{
+    transform: scaleX(-1);
+}
+#color-scheme-toggle:hover{
+    transform: translateY(0);
+    color: var(--primary);
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --bgColor: var(--black);
+        --textColor: var(--white);
+        --primary: var(--m-green);
+        
+        --bgLight: var(--l-black);
+        --highlight: var(--d-gray);
+        --scrollbarThumb: var(--d-gray);
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root{
+        --bgColor: var(--white);
+        --textColor: var(--black);
+        --primary: var(--green);
+        
+        --bgLight: var(--d-white);
+        --highlight: var(--feher);
+        --scrollbarThumb: var(--d-white);
+    }
+}

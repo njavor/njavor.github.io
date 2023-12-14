@@ -3,23 +3,26 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" >
+    <meta name="color-scheme" content="dark light">
     <title>jávor nikolett</title>
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="static/css/-google-icons.css" >
+    <link rel="stylesheet" type="text/css" href="css/-google-icons.css" >
 
-    <link rel="stylesheet" type="text/css" href="static/css/general.css" >
-    <link rel="stylesheet" type="text/css" href="static/css/header.css" >   
-    <link rel="stylesheet" type="text/css" href="static/css/footer.css" >
-    <link rel="stylesheet" type="text/css" href="static/css/section.css" >
+    <link rel="stylesheet" type="text/css" href="css/general.css" >
+    <link rel="stylesheet" type="text/css" href="css/colors.css" >
+    <link rel="stylesheet" type="text/css" href="css/header.css" >   
+    <link rel="stylesheet" type="text/css" href="css/footer.css" >
+    <link rel="stylesheet" type="text/css" href="css/section.css" >
 
-    <link rel="stylesheet" type="text/css" href="static/css/index.css" >
+    <link rel="stylesheet" type="text/css" href="css/index.css" >
 
     <!-- js -->
-    <script src="static/js/nameIn.js" defer></script>
+    <script src="js/lightMode.js" defer></script>
+    <script src="js/nameIn.js" defer></script>
     
     <!-- favicon -->
-    <link rel="shortcut icon" href="static/fav.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon" >
     
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,28 +35,53 @@
 
 <body>
     <header>
-        <a href="/" id="logolink" class="hidden"><h1>jávor nikolett</h1></a>
-        <nav>
-            <a href="/">Kezdőlap</a>
-            <a href="other">Egyebek</a>
-        </nav>
+        <a href="/" id="logolink" class="hidden">
+            <img src="img/nj_white.png" alt="">
+        </a>
+        <button id="color-scheme-toggle" class="material-symbols-outlined">
+            contrast
+        </button>
     </header>
 
     <main>
-        <section id="fej" class="black">
-            <h1>jávor nikolett</h1>
-            <!-- <h3 id="subhead"></h3> -->
+        <section id="fej">
+            <h1 id="nev">jávor nikolett</h1>
+            <ul class="social-media">
+                <a href="https://github.com/njavor" target="_blank"><img src="img/ico/github.svg" alt="" ></a>
+                <a href="https://www.facebook.com/njavor" target="_blank"><img src="img/ico/facebook.svg" alt="" ></a>
+            </ul>
         </section>
+
+        <!-- <section id="projects">
+            <h2>iskolai projektek</h2>
+            <a>
+                <h3>majd</h3>
+                <span></span>
+                <p></p>
+            </a>
+        </section>
+        <section id="docs">
+            <h2>dokumentumok</h2>
+            <article>
+                <img src="" alt="">
+                <div class="leiras">
+                    <a href="" target="_blank">
+                        <h3>Majd</h3>
+                    </a>
+                    <span></span>
+                    <p></p>
+                </div>
+                <div class="buttons">
+                    <a href="" download target="_self"><button>
+                        <span class="material-symbols-outlined">download</span>
+                    </button></a>
+                </div>
+            </article>
+        </section> -->
     </main>
 
-    <footer>
-        <ul class="social-media">
-            <a href="https://www.facebook.com/nikolett.javor.7" target="_blank"><img src="static/ico/facebook.svg" alt="" ></a>
-            <a href="https://twitter.com/njavorrr" target="_blank"><img src="static/ico/twitter.svg" alt="" ></a>
-            <a href="https://www.instagram.com/njavorrr/" target="_blank"><img src="static/ico/instagram.svg" alt="" ></a>
-            <a href="https://github.com/njavor" target="_blank"><img src="static/ico/github.svg" alt="" ></a>
-        </ul>
-        <img src="static/img/nj.png" alt="" id="logo" >
-    </footer>
+    <!-- <footer>
+        <img src="img/nj.png" alt="" id="logo" >
+    </footer> -->
 </body>
 </html>

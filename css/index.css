@@ -1,0 +1,233 @@
+main{
+    display: grid;
+    grid-template-areas:
+    'fej projects'
+    'fej docs';
+    grid-template-columns: 45fr 55fr;
+}
+
+#fej{
+    grid-area: fej;
+    
+    margin-block: 40px 7svh;
+    padding-inline: 20% 0;
+    height: 70svh;
+
+    align-items: start;
+    gap: 0;
+}
+#fej h1{
+    letter-spacing: 5px;
+}
+#fej h3{
+    margin: -.25em 0 0 1rem;
+    
+    font-size: 14pt;
+    font-weight: 400;
+    font-family: var(--wsans);
+    opacity: .5;
+}
+
+#fej .social-media{
+    margin-left: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .5em;
+}
+#fej a{
+    opacity: .1;
+}
+#fej a:hover{
+    opacity: .8;
+}
+#fej img{
+    height: 25px;
+    filter: invert(99%) sepia(2%) saturate(991%) hue-rotate(104deg) brightness(95%) contrast(98%);
+}
+body.light-mode #fej img{
+    filter: invert(0%) sepia(3%) saturate(7407%) hue-rotate(37deg) brightness(100%) contrast(94%);
+}
+
+
+
+
+
+
+
+
+#projects, #docs{
+    padding-left: 5%;
+}
+
+
+#projects{
+    grid-area: projects;
+    
+    
+    & a{
+        width: calc(100% - 10rem);
+        padding: 3rem 5rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        cursor: pointer;
+        
+        background-color: var(--textColor);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        mix-blend-mode: luminosity;
+        border-radius: 20px;
+        
+        transition: .3s;
+        opacity: 1;
+        
+        
+        & > *{
+            transition: .3s;
+            opacity: 0;
+        }
+
+        &:hover{
+            scale: 1.01;
+            mix-blend-mode: normal;
+
+            & > *{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+#projects #electoral-systems{
+    background-image: url(../img/projects/electoral-systems-hero.png);
+}
+
+
+
+
+
+
+#docs{
+    grid-area: docs;
+}
+
+#docs article{
+    padding: 2rem clamp(2em, 5%, 5%);
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: fit-content(100%) 1fr fit-content(100%);
+    align-items: center;
+    gap: 3em;
+
+    background-color: var(--bgLight);
+    border-radius: 20px;
+
+    transition: .3s;
+}
+#docs article:hover{
+    background-color: var(--highlight);
+    scale: 1.01;
+}
+
+#docs img{
+    height: 225px;
+    max-width: 147px;
+    object-fit: contain;
+    transition: scale .25s ease-out;
+}
+#docs article:hover img{
+    scale: 1.1;
+}
+
+#docs article div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#docs article .leiras{
+    margin-block: 2rem;
+    align-self: flex-start;
+}
+#docs .leiras a:hover{
+    color:inherit;
+}
+#docs .leiras h3{
+    font-weight: 500;
+}
+#docs .leiras span{
+    margin-block: .3em 2em;
+    font-style: italic;
+}
+
+#docs .buttons{
+    align-items: end;
+    gap: 1rem;
+}
+#docs .buttons a{
+    width: 100%;
+}
+#docs .buttons button{
+    width: 100%;
+    margin:0;
+    font-size: 14pt;
+}
+
+
+
+
+
+/* MOBIL */
+@media only screen and (max-width: 1400px) {
+    main{
+        display: grid;
+        grid-template-areas:
+        'fej'
+        'projects'
+        'docs';
+        grid-template-columns: 1fr;
+    }
+    #fej{
+        padding-inline: 15%;
+    }
+
+    #fej, #projects, #docs{
+        padding-left: 15%;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #docs article{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
+        gap: 1em;
+    
+        background-color: var(--bgLight);
+        border-radius: 20px;
+    
+        transition: .3s;
+    }
+    #docs article img{
+        justify-self: center;
+    }
+
+    #writings a{
+        flex-direction: column;
+        padding: 0 0 2em 0;
+    }
+    #writings a img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    #writings a .leiras{
+        padding-inline: 2em;
+    }
+}

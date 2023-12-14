@@ -1,5 +1,5 @@
 const title = document.getElementById('logolink');
-const asubhead = document.getElementById('subhead');
+const asubhead = document.getElementById('nev');
 
 window.addEventListener('scroll', function(){
     if(title.classList.contains('show')){
