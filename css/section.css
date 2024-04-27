@@ -6,103 +6,40 @@ section{
     align-items: center;
     justify-content: center;
     gap: 2em;
-}
-
-section .content{
-    margin-top: 2rem;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-section .content article{
-    transition: .3s;
-    border-radius: 20px;
-}
+    flex-wrap: wrap;
 
 
 
-
-
-
-section.docs .content article{
-    padding: 2rem clamp(2em, 5%, 5%);
-
-    display: grid;
-    grid-template-columns: fit-content(100%) 1fr fit-content(100%);
-    align-items: center;
-    gap: 3em;
-
-    background-color: var(--bgLight);
-
-
-    &:hover{
-        background-color: var(--highlight);
-        scale: 1.01;
-    }
-
-
-    & img{
-        height: 225px;
-        max-width: 147px;
-        object-fit: contain;
-        transition: scale .25s ease-out;
-
-
-        &:hover{
-            scale: 1.1;
-        }
-    }
-
-    & .description{
-        margin-block: 2rem;
-        align-items: flex-start;
-
-
-        &:hover{
-            color: inherit;
-        }
-    }
-}
-
-section.articles .content article{
-    padding-right: 4em;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-
-    background-color: var(--bgLight);
-
-
-    &:hover{
-        color: inherit;
-        background-color: var(--highlight);
-        scale: 1.005;
-    }
-
-
-    & img{
-        width: 600px;
-        aspect-ratio: 8/5;
-        object-fit: cover;
-
-        border-radius: 20px 0 0 20px;
-    }
-    & .description{
-        height: 100%;
-
+    & .content{
+        margin-top: 2rem;
+        width: 100%;
+        
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: space-around;
+        align-items: center;
 
 
-        & .date{
-            margin-bottom: 1em;
-            opacity: .5;
+
+        & article{
+            transition: .3s;
+            border-radius: 20px;
         }
+    }
+}
+
+
+
+
+
+
+/* MOBIL */
+@media only screen and (max-width: 1200px) {
+    section{
+        padding-inline: 15%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    section{
+        padding-inline: 5%;
     }
 }

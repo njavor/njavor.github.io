@@ -13,14 +13,17 @@ header{
     justify-content: space-between;
     align-items: center;
     
-    background-color: var(--bgColor);
+    background: var(--bgColor);
+    transition: background-color .2s;
+    
     color: var(--textColor);
     font-weight: 600;
 }
-    
+
 
 header #logolink, header img{
     height: 46px;
+    transition: .3s;
 }
 body.light-mode header img{
     filter: invert(1);
@@ -43,4 +46,26 @@ header nav{
     justify-content: right;
     align-items: center;
     gap: 3.5rem;
+}
+
+
+header.noBg{
+    background-color: transparent;
+    
+    & img{
+        filter: none !important;
+    }
+    & button{
+        color: var(--white) !important;
+    }
+}
+
+
+
+
+/* MOBIL */
+@media only screen and (max-width: 1200px) {
+    
+}
+@media only screen and (max-width: 550px) {
 }

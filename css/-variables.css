@@ -1,0 +1,39 @@
+:root{
+    /* font families */
+    --f-heading: 'Prompt', sans-serif;
+    --f-content: 'Work Sans', sans-serif;
+
+    /* font sizes*/
+    --fs-x10: clamp(28pt, 8vw + 1rem, 50pt);
+    --fs-x8: clamp(14pt, 2vw + 1rem, 26pt);
+    /* !!! set transition none */
+
+    --fs-800: 42pt; /* h1 */
+    --fs-700: 32pt; /* h2 */
+    --fs-600: 24pt; /* h3 */
+    --fs-500: 20pt; /* h4 */
+    
+    --fs-400: 14pt; /* p */
+
+    --fs-button: 16pt;
+}
+@media only screen and (max-width: 800px){
+    :root{
+        --fs-800: 36pt; /* h1 */
+        --fs-700: 28pt; /* h2 */
+        --fs-600: 22pt; /* h3 */
+        --fs-500: 18pt; /* h4 */
+        
+        --fs-400: 12pt; /* p */
+
+        --fs-button: 14pt;
+    }
+}
+@media only screen and (max-width: 300px){
+    :root{
+        --fs-800: 30pt; /* h1 */
+        --fs-700: 24pt; /* h2 */
+        --fs-600: 20pt; /* h3 */
+        --fs-500: 16pt; /* h4 */
+    }
+}
