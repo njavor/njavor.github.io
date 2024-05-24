@@ -8,7 +8,7 @@
     text-align: center;
     color: var(--white);
 
-    background: linear-gradient(to bottom, transparent, 80%, var(--bgColor)), url(../../img/things/te.jpg);
+    background: linear-gradient(to bottom, transparent, 80%, var(--bgColor)), url(../../img/things/torierettsegi.jpg);
     background-position: center;
     background-size: cover;
 
@@ -90,7 +90,8 @@
 
 
 #gyakorlas{
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 
 
 
@@ -100,6 +101,7 @@
     
     & button{
         height: 100%;
+        width: 100%;
         align-items: center;
 
         font-size: var(--fs-500);
@@ -135,5 +137,11 @@
         padding-bottom: 7em;
         flex-direction: column;
         gap: 1;
+    }
+}
+@media only screen and (max-width: 750px) {
+    #gyakorlas{
+        display: flex;
+        flex-direction: column;
     }
 }
