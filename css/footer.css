@@ -1,23 +1,15 @@
 footer{
-    position: relative;
-    padding: 1em 7% 2em 7%;
-    background-color: var(--bgColor);
-    text-align: center;
-    color: var(--textColor);
+    width: 100%;
+    padding: 4em 5% 2em 5%;
+    box-sizing: border-box;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    z-index: 10;
-}
 
-footer #logo{
-    position: absolute;
-    height: 65px;
-    margin-top: -5px;
-    opacity: .1;
-    filter: grayscale(1);
-    z-index: -1;
+    & img{
+        height: 40px;
+        opacity: .3;
+    }
 }

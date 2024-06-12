@@ -127,6 +127,9 @@ body.light-mode #fej img{
     }
 }
 @media only screen and (max-width: 550px) {
+    main{
+        display: flex;
+    }
     #fej{
         display: none;
     }

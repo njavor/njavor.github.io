@@ -1,4 +1,9 @@
 :root{
+
+    --speed-slow: .5s;
+    --speed-def: .3s;
+    --speed-quick: .2s;
+
     /* font families */
     --f-heading: 'Prompt', sans-serif;
     --f-content: 'Work Sans', sans-serif;

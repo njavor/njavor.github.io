@@ -1,4 +1,5 @@
 section{
+    width: 100%;
     padding: 2em clamp(2em, 15%, 15%) 4em clamp(2em, 15%, 15%);
 
     display: flex;
@@ -21,7 +22,7 @@ section{
 
 
         & article{
-            transition: .3s;
+            transition: var(--speed-def);
             border-radius: 20px;
         }
     }
