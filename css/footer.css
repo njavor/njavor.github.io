@@ -1,15 +1,13 @@
 footer{
     width: 100%;
-    padding: 4em 5% 2em 5%;
+    padding: 4em 5% 1.5em 5%;
     box-sizing: border-box;
+    opacity: .6;
 
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    gap: 1em;
 
-
-    & img{
-        height: 40px;
-        opacity: .3;
-    }
+    font-size: var(--fs-300);
 }

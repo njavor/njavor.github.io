@@ -17,6 +17,7 @@ header{
     transition: background-color var(--speed-quick);
     
     color: var(--textColor);
+    font-size: var(--fs-500);
     font-weight: 600;
 }
 

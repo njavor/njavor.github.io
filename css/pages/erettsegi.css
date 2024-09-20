@@ -26,6 +26,21 @@
         font-weight: 500;
         transition: none;
     }
+    & button{
+        margin-top: 1em;
+        opacity: .6;
+        
+        color: var(--black);
+        background-color: var(--white);
+        
+        transform: scale(.7);
+        
+        &:hover{
+            opacity: .9;
+            color: var(--white);
+            background-color: var(--black);
+        }
+    }
 }
 
 
@@ -39,7 +54,7 @@
     gap: 4em;
 
     background-color: var(--bgLight);
-    border-radius: 20px;
+    border-radius: var(--br-half);
 
     transition: .2s;
 
@@ -89,7 +104,8 @@
 }
 
 
-#gyakorlas{
+
+#extra{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 
@@ -111,22 +127,31 @@
     & span{
         font-size: 100px;
     }
+    
+    & #sheets button{
+        color: var(--white);
+        background-color: #34A853;
+        
+        &:hover{
+            background-color: #53b36d;
+        }
+    }
 
+    & #feladattar button{
+        color: var(--white);
+        background-color: #b6602e;
+
+        &:hover{
+            background-color: #c4774b;
+        }
+    }
+    
     & #quizlet button{
         color: var(--white);
         background-color: #4755cb;
 
         &:hover{
             background-color: #6672e0;
-        }
-    }
-
-    & #sheets button{
-        color: var(--white);
-        background-color: #34A853;
-
-        &:hover{
-            background-color: #53b36d;
         }
     }
 }
@@ -140,7 +165,7 @@
     }
 }
 @media only screen and (max-width: 750px) {
-    #gyakorlas{
+    #extra{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;

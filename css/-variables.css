@@ -1,8 +1,9 @@
 :root{
-
+    /* (animation) speeds */
     --speed-slow: .5s;
     --speed-def: .3s;
     --speed-quick: .2s;
+
 
     /* font families */
     --f-heading: 'Prompt', sans-serif;
@@ -19,8 +20,14 @@
     --fs-500: 20pt; /* h4 */
     
     --fs-400: 14pt; /* p */
+    --fs-300: 10pt;
 
     --fs-button: 16pt;
+
+    
+    /* border radius */
+    --br-def: 40px;
+    --br-half: 20px;
 }
 @media only screen and (max-width: 800px){
     :root{

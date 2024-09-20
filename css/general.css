@@ -17,6 +17,8 @@ body{
     -ms-hyphens: auto;
     -o-hyphens: auto;
     hyphens: auto;
+
+    font-size: var(--fs-400);
 }
 
 body::-webkit-scrollbar{
@@ -67,6 +69,7 @@ h4{font-size: var(--fs-500);}
 
 p{
     font-size: var(--fs-400);
+    font-weight: 400;
     opacity: 90%;
 }
     
@@ -77,6 +80,11 @@ a{
     text-decoration: none;
     transition: var(--speed-quick);
     cursor: pointer;
+
+
+    &  * {
+        transition: 0;
+    }
 }
 a:hover, button:hover > a{
     color: var(--primary);
@@ -91,7 +99,7 @@ button{
     font-weight: 700;
     font-size: var(--fs-button);
     border: none;
-    border-radius: 10px;
+    border-radius: var(--br-def);
 
     transition: var(--speed-quick);
     cursor: pointer;
@@ -126,4 +134,10 @@ img{height: 100px}
 .flex{
     display: flex;
     gap: 2em;
+}
+
+
+
+.bold{
+    font-weight: bold;
 }

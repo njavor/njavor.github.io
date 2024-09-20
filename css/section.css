@@ -23,7 +23,7 @@ section{
 
         & article{
             transition: var(--speed-def);
-            border-radius: 20px;
+            border-radius: var(--br-half);
         }
     }
 }

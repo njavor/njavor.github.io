@@ -9,7 +9,6 @@ window.addEventListener('scroll', function(){
         }
     }
     else{
-        console.log("szia");
         if(changePosition >= this.scrollY){
             header.classList.add('noBg');
         }
