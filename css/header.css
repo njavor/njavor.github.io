@@ -7,7 +7,7 @@ header{
     top: 0;
     left: 0;
     
-    height: 75px;
+    height: 65px;
     
     display: flex;
     justify-content: space-between;
@@ -17,13 +17,13 @@ header{
     transition: background-color var(--speed-quick);
     
     color: var(--textColor);
-    font-size: var(--fs-500);
+    font-size: var(--fs-button);
     font-weight: 600;
 }
 
 
 header #logolink, header img{
-    height: 46px;
+    height: 38px;
     transition: var(--speed-def);
 }
 body.light-mode header img{
@@ -47,6 +47,10 @@ header nav{
     justify-content: right;
     align-items: center;
     gap: 3.5rem;
+}
+
+header #color-scheme-toggle.material-symbols-outlined{
+    font-size: 16pt;
 }
 
 
