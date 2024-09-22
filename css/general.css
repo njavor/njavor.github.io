@@ -70,7 +70,7 @@ h4{font-size: var(--fs-500);}
 p{
     font-size: var(--fs-400);
     font-weight: 400;
-    opacity: 90%;
+    color: var(--textColor2);
 }
     
 a{

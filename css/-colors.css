@@ -9,6 +9,9 @@
     --gray: #6E8189;
     --d-white: #bed1d0;
     --white: #cfdddc;
+
+    --white-p: #bbc8c7;
+    --black-p: #1c1d1d;
     
     --m-green: #53b9aa;
     --green: #2ca08f;
@@ -17,6 +20,7 @@
     color-scheme: dark light;
     --bgColor: var(--black);
     --textColor: var(--white);
+    --textColor2: var(--white-p);
     --primary: var(--m-green);
     
     --bgLight: var(--l-black);
@@ -27,6 +31,7 @@
 body.light-mode {
     --bgColor: var(--white);
     --textColor: var(--black);
+    --textColor2: var(--black-p);
     --primary: var(--green);
     
     --bgLight: var(--d-white);
@@ -55,6 +60,7 @@ body.light-mode #color-scheme-toggle{
     :root{
         --bgColor: var(--black);
         --textColor: var(--white);
+        --textColor2: var(--white-p);
         --primary: var(--m-green);
         
         --bgLight: var(--l-black);
@@ -66,6 +72,7 @@ body.light-mode #color-scheme-toggle{
     :root{
         --bgColor: var(--white);
         --textColor: var(--black);
+        --textColor2: var(--black-p);
         --primary: var(--green);
         
         --bgLight: var(--d-white);
