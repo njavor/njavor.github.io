@@ -19,6 +19,7 @@ main{
     
     & h1{
         letter-spacing: 5px;
+        font-family: var(--f-title);
     }
 
     & h3{

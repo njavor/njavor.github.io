@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'Open Sans', sans-serif;
-    src: url(/selfhost/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
-    font-family: 'Work Sans', sans-serif;
-    src: url(/selfhost/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
-}
-
 :root{
     /* (animation) speeds */
     --speed-slow: .5s;
@@ -15,6 +6,7 @@
 
 
     /* font families */
+    --f-title: 'Prompt', sans-serif;
     --f-heading: 'Open Sans', sans-serif;
     --f-content: 'Work Sans', sans-serif;
 
