@@ -96,6 +96,7 @@ a:hover, button:hover > a{
 }
 
 a#totop{
+    z-index: 999;
     position: fixed;
     display: none;
     bottom: 2em;
