@@ -110,7 +110,7 @@ a#totop{
     } */
 
     transition-property: display opacity;
-    transition-duration: .5s;
+    transition-duration: var(--speed-slow);
     transition-behavior: allow-discrete;
     transform: translateY(10px);
     

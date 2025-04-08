@@ -12,9 +12,10 @@ const disableLightMode = () => {
 
 
 
-if (lightMode === 'enabled') {
+if (lightMode === 'enabled' || (lightMode === null && window.matchMedia('(prefers-color-scheme: light)').matches)) {
     enableLightMode();
-}
+};
+
 lightModeToggle.addEventListener('click', () => {
     lightMode = localStorage.getItem('lightMode');
     if (lightMode === 'enabled'){
@@ -23,4 +24,4 @@ lightModeToggle.addEventListener('click', () => {
     else{
         enableLightMode();
     }
-})
+});
