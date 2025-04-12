@@ -32,6 +32,7 @@
 }
 
 body.light-mode {
+    color-scheme: light dark;
     --bgColor: var(--white);
     --textColor: var(--black);
     --textColor2: var(--black-p);
@@ -60,7 +61,7 @@ body.light-mode #color-scheme-toggle{
 
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --bgColor: var(--black);
         --textColor: var(--white);
@@ -83,4 +84,4 @@ body.light-mode #color-scheme-toggle{
         --highlight: var(--feher);
         --scrollbarThumb: var(--d-white);
     }
-}
+} */
