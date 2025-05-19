@@ -15,7 +15,8 @@
     
     --m-green: #53b9aa;
     --green: #2ca08f;
-    --salmon: #ff6a59;
+    /* --salmon: #ff6a59; */
+    --salmon: #ff3d29;
     --m-salmon: #fa8072;
     
     /* default color scheme - dark */
@@ -24,7 +25,8 @@
     --textColor: var(--white);
     --textColor2: var(--white-p);
     --primary: var(--m-green);
-    --secondary: var(--m-salmon);
+    /* --secondary: var(--m-salmon); */
+    --important: var(--m-salmon);
     
     --bgLight: var(--l-black);
     --highlight: var(--d-gray);
@@ -37,7 +39,8 @@ body.light-mode {
     --textColor: var(--black);
     --textColor2: var(--black-p);
     --primary: var(--green);
-    --secondary: var(--salmon);
+    /* --secondary: var(--salmon); */
+    --important: var(--salmon);
     
     --bgLight: var(--d-white);
     --highlight: var(--feher);

@@ -23,7 +23,7 @@ header{
 
 
 header #logolink, header img{
-    height: 38px;
+    height: 33px;
     transition: var(--speed-def);
 }
 body.light-mode header img{
