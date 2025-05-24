@@ -24,12 +24,12 @@ body{
     font-size: var(--fs-400);
 }
 
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
     background-color: var(--bgColor);
 }
 body::-webkit-scrollbar-thumb{
     background-color: var(--scrollbarThumb);
-}
+} */
 
 
 main{
