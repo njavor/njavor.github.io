@@ -194,3 +194,13 @@ img{height: 100px}
 .bold{
     font-weight: bold;
 }
+
+
+
+
+/* adatkezelés */
+#sec{
+    & h3{
+        align-self: flex-start;
+    }
+}

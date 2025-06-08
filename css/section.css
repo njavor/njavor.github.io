@@ -9,7 +9,9 @@ section{
     gap: 2em;
     flex-wrap: wrap;
 
-
+    & h2, h3, h4{
+        text-align: center;
+    }
 
     & .content{
         margin-top: 2rem;

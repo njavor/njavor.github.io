@@ -5,7 +5,7 @@ footer{
     opacity: .6;
 
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     gap: 1em;
 
