@@ -11,6 +11,7 @@
             align-items: center;
             gap: var(--space-s);
             opacity: var(--opacity-m);
+            text-transform: lowercase;
 
             & :not(:nth-child(1))::before{
                 content: "|";
@@ -22,6 +23,9 @@
         }
     }
 }
+
+
+
 #content > div{
     display: grid;
     grid-template-columns: fit-content(100%) 1fr;
@@ -53,6 +57,16 @@
         h3{
             scroll-margin-top: var(--space-xxl);
             &:not(:nth-child(1)){ margin-top: var(--space-l); }
+        }
+
+        > a{ width: fit-content; }
+
+        pre code .visszavezetes{
+            .egy{ color: var(--yellow); }
+            .ketto{ color: var(--red); }
+            .harom{ color: var(--blue); }
+            .negy{ color: var(--green2); }
+            .ot{ color: var(--violet); }
         }
     }
 }
