@@ -1,76 +1,128 @@
 header{
-    z-index: 5;
-    padding-inline: 5%;
-    
+    z-index: 99;
+    box-sizing: border-box;
     position: fixed;
-    width: 90%;
-    top: 0;
-    left: 0;
-    
-    height: 65px;
+    top: var(--space-s);
+    inset: var(--space-s) 0 auto 0;
+
+
+    width: 100%;
+    margin-inline: auto;
+    max-width: calc( var(--max-width) + 2 * var(--space-s));
+    padding: var(--space-xs) var(--space-s);
     
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    gap: var(--space-m);
     
-    background: var(--bgColor);
-    transition: background-color var(--speed-quick);
+    background: var(--headerBgColor);
+    color: var(--headerColor);
     
-    color: var(--textColor);
-    font-size: var(--fs-button);
-    font-weight: 600;
-}
+    border: var(--border-def);
+    box-shadow: var(--box-shadow-def);
 
+    #logolink{
+        display: block;
 
-header #logolink, header img{
-    height: 33px;
-    transition: var(--speed-def);
-}
-body.light-mode header img{
-    content: url(/img/nj_black.png);
-}
+        #logo{
+            height: var(--logo-size);
+            fill: var(--headerColor);
 
-header #logolink{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-header #logolink.hidden{
-    transform: translateY(-100px);
-    transition: all var(--speed-slow);
-}
-header #logolink.show{transform: translateY(0);}
-
-
-header nav{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 3.5rem;
-}
-
-header #color-scheme-toggle.material-symbols-outlined{
-    font-size: 16pt;
-}
-
-
-header.noBg{
-    background-color: transparent;
-    
-    & img{
-        content: url(/img/nj_white.png) !important;
+            &:hover{ fill: var(--primary); }
+        }
     }
-    & button{
-        color: var(--white) !important;
+
+    nav ul li{
+        display: flex;
+        align-items: center;
+
+        &:not(:nth-child(1))::before{
+            content: "keyboard_arrow_right";
+            margin-right: var(--space-s);
+            font-family: var(--font-icon);
+            font-weight: bold;
+        }
     }
-}
+
+    #functions{
+        margin-inline: auto 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #hamburger{
+        --_transition-speed: 0.2s;
+        background: transparent; border: none; box-shadow: none; translate: none; padding: 0;
+        margin-block: var(--space-xs);
+        width: 30px;
+        height: 30px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+
+        div{
+            width: 30px;
+            height: 5px;
+            background: var(--textColor);
+
+            &:nth-child(3){
+                position: absolute;
+                top: 40%;
+            }
+
+            &:nth-child(1), &:nth-child(4){ transition: translate var(--_transition-speed) var(--_transition-speed), opacity 0s var(--_transition-speed); }
+            &:nth-child(2), &:nth-child(3){ transition: rotate var(--_transition-speed); }
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        margin-inline: calc(-1 * var(--space-xs)) auto;
+        width: 78px;
+        flex-direction: column-reverse;
+
+
+        #hamburger{ display: flex; }
+        #logolink, nav, #functions{ display: none; }
+
+        nav ul{
+            writing-mode: sideways-lr;
+            li{
+                &:not(:nth-child(1))::before{
+                    margin: var(--space-s) 0 0 0;
+                }
+            }
+        }
+
+        #functions{
+            margin: 0;
+        }
 
 
 
+        &.open{
+            #hamburger{     
+                margin-bottom: 0;
+                
+                div:nth-child(1), div:nth-child(4){
+                    opacity: 0;
+                    transition: translate var(--_transition-speed), opacity 0s var(--_transition-speed);
+                }
+                div:nth-child(1){ translate: 0 12px; }
+                div:nth-child(4){ translate: 0 -12px; }
 
-/* MOBIL */
-@media only screen and (max-width: 1200px) {
-    
-}
-@media only screen and (max-width: 550px) {
+                div:nth-child(2), div:nth-child(3){
+                    transition: rotate var(--_transition-speed) var(--_transition-speed);
+                }
+                div:nth-child(2){ rotate: z 45deg; }
+                div:nth-child(3){ rotate: z -45deg; }
+            }
+
+
+            nav, #functions, #logolink{
+                display: flex;
+            }
+        }
+    }
 }

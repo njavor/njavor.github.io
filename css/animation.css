@@ -1,0 +1,77 @@
+@keyframes toMoon {
+    0%{ rotate: z 0deg;       filter: drop-shadow(2px 2px var(--black));  fill: orange; }
+    10%{ rotate: z 0deg;      filter: drop-shadow(0 0 var(--black));      fill: orange; }
+    60%{ rotate: z -425deg;   filter: drop-shadow(0 0 var(--black)); }
+    90%{ rotate: z -405deg;   filter: drop-shadow(0 0 var(--black));      fill: var(--white); }
+    100%{ rotate: z -405deg;  filter: drop-shadow(2px 2px var(--black));  fill: var(--white); }
+}
+@keyframes toSun {
+    0%{ rotate: z -405deg;    filter: drop-shadow(2px 2px var(--black));  fill: var(--white); }
+    10%{ rotate: z -405deg;   filter: drop-shadow(0 0 var(--black));      fill: var(--white); }
+    60%{ rotate: z 20deg;     filter: drop-shadow(0 0 var(--black)); }
+    90%{ rotate: z 0deg;      filter: drop-shadow(0 0 var(--black));      fill: orange; }
+    100%{ rotate: z 0deg;     filter: drop-shadow(2px 2px var(--black));  fill: orange; }
+}
+
+
+@keyframes sunWiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+/* @keyframes rayHide{
+    0% { translate: none; }
+    50% { translate: none; }
+    100% { translate: ; }
+} */
+
+
+
+#theme-button{
+    background: transparent; padding: 0; border: none; box-shadow: none;
+    
+    width: 40px;
+    
+    svg{
+        width: inherit;
+        aspect-ratio: 1 / 1;
+        
+        fill: black;
+        overflow: visible;
+    }
+    rect#sun{
+        fill:orange;
+        stroke: black;
+        stroke-width: 3px;
+        filter: drop-shadow(2px 2px black);
+        
+        transform-origin: center;
+    }
+    rect.ray{
+        filter: drop-shadow(2px 2px black);
+    }
+    
+
+    &:hover{
+        translate: none;
+    }
+}
+
+body.dark{
+    #theme-button{
+
+        rect#sun{
+            fill: var(--white);
+            rotate: z -405deg;
+    
+            &:hover{
+                animation: sunWiggle 1s infinite;
+            }
+        }
+        rect.ray{
+            opacity: 0;
+        }
+    }
+}

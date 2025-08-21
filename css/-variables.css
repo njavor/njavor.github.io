@@ -1,52 +1,121 @@
 :root{
-    /* (animation) speeds */
-    --speed-slow: .5s;
-    --speed-def: .3s;
-    --speed-quick: .2s;
+    /* SPACING */
+    --space-xxs: .2rem;
+    --space-xs: .5rem;
+    --space-s: 1rem;
+    --space-m: 2rem;
+    --space-l: 4rem;
+    --space-xl: 5rem;
+    --space-xxl: 8rem;
 
+    --min-sides: 5%;
+    --max-width: 1100px;
+    --max-width-header: calc(var(--max-width) + 2 * var(--space-s));
+    --max-width-article: 800px;
 
-    /* font families */
-    --f-title: 'Prompt', sans-serif;
-    --f-heading: 'Work Sans', sans-serif;
-    --f-content: 'Work Sans', sans-serif;
+    --height-header: calc(62px * 2.5);  /* 62px is measured */
 
-    /* font sizes*/
-    --fs-x10: clamp(28pt, 8vw + 1rem, 50pt);
-    --fs-x8: clamp(14pt, 2vw + 1rem, 26pt);
-    /* !!! set transition none */
-
-    --fs-800: 42pt; /* h1 */
-    --fs-700: 32pt; /* h2 */
-    --fs-600: 24pt; /* h3 */
-    --fs-500: 18pt; /* h4 */
+    --logo-size: 40px;
     
-    --fs-400: 12pt; /* p */
-    --fs-300: 10pt;
 
-    --fs-button: 16pt;
+
+    /* BORDER */
+    --border-def: 3px solid var(--borderColor);
+    --border-xs: 1px;
+    --border-s: 2px;
+    --border-m: 3px;
+    --border-l: 5px;
+    --border-xl: 7px;
+
+    --box-shadow-def: 4px 4px 0 0 var(--borderColor);
+    
+
+
+    /* OPACITY */
+    --opacity-xxs: 0.1;
+    --opacity-xs: 0.2;
+    --opacity-s: 0.3;
+    --opacity-m: 0.5;
+    --opacity-l: 0.7;
+
+
+
+
+    /* FONT */
+    --font-def: "Outfit", sans-serif;
+    --font-headings: "Outfit", sans-serif;
+    --font-title: "Outfit", sans-serif;
+
+    --font-code: "Roboto Mono", monospace;
+    --font-icon: "Material Symbols Outlined";
+
+    --font-regular: 400;
+    --font-bold: 600;
+
+    --font-xs: 10pt;
+    --font-s: 13pt;
+    --font-m: 14pt;
+    --font-l: 18pt;
+    --font-xl: 26pt;
+    --font-xxl: 32pt;
+    --font-xxxl: 42pt;
+
+    @media only screen and (max-width: 800px) {
+        --font-s: 12pt;
+        --font-l: 16pt;
+        --font-xl: 20pt;
+        --font-xxl: 24pt;
+        --font-xxxl: 30pt;
+    }
+
 
     
-    /* border radius */
-    --br-def: 40px;
-    --br-half: 20px;
-}
-@media only screen and (max-width: 800px){
-    :root{
-        --fs-800: 36pt; /* h1 */
-        --fs-700: 28pt; /* h2 */
-        --fs-600: 22pt; /* h3 */
-        --fs-500: 18pt; /* h4 */
-        
-        /* --fs-400: 12pt; p */
+    /* COLORS */
+    --white: #efefef;
+    --offwhite: #cfdddc;
+    --light-gray: #5b6161;
+    --gray: #1a1a1a;
+    --black: #080808;
 
-        --fs-button: 14pt;
-    }
+    --rgb-white: 239, 239, 239;
+    --rgb-offwhite: 207, 221, 220;
+    --rgb-gray: 26, 26, 26;
+    --rgb-black: 8, 8, 8;
+
+
+    --green: #2CA08F;
+    --muted-green: #53b9aa;
+    --red: #f71735;
+    --yellow: #ffc800;
+    --blue: #2a89ee;
+    
+    --rgb-green: 44, 160, 143;
+    --rgb-red: 247, 23, 53;
+    --rgb-yellow: 255, 200, 0;
+    --rgb-blue: 42, 137, 238;
+
+    /* Theme */
+    --bgColor: var(--offwhite);
+    --bgColor2: var(--white);
+    --textColor: var(--black);
+    --borderColor: var(--black);
+    --primary: var(--green);
+    --secondary: var(--red);
+    --headerBgColor: var(--white);
+    --headerColor: var(--textColor);
+    --scrollColor: var(--muted-green);
 }
-@media only screen and (max-width: 300px){
-    :root{
-        --fs-800: 30pt; /* h1 */
-        --fs-700: 24pt; /* h2 */
-        --fs-600: 20pt; /* h3 */
-        --fs-500: 16pt; /* h4 */
-    }
+
+
+
+
+
+:root:has(body.dark){
+    --bgColor: var(--gray);
+    --textColor: var(--white);
+    --primary: var(--muted-green);
+
+    --headerBgColor: var(--gray);
+    --headerColor: var(--white);
+    --scrollColor: var(--light-gray);
 }
