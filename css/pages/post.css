@@ -30,6 +30,10 @@
     display: grid;
     grid-template-columns: fit-content(100%) 1fr;
     gap: var(--space-l);
+
+    @media only screen and (max-width: 1100px) {
+        gap: 0;
+    }
     
     #toc{
         position: sticky;
@@ -62,11 +66,11 @@
         > a{ width: fit-content; }
 
         pre code .visszavezetes{
-            .egy{ color: var(--yellow); }
-            .ketto{ color: var(--red); }
-            .harom{ color: var(--blue); }
-            .negy{ color: var(--green2); }
-            .ot{ color: var(--violet); }
+            &.egy{ color: var(--yellow); }
+            &.ketto{ color: var(--red); }
+            &.harom{ color: var(--blue); }
+            &.negy{ color: var(--green2); }
+            &.ot{ color: var(--violet); }
         }
     }
 }

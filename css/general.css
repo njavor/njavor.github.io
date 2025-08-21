@@ -206,9 +206,10 @@ article{
     gap: var(--space-s);
     
     a{
-        border-bottom: var(--border-xs) solid var(--primary);
-        transition: .3s, border-bottom 0s;
-        &:hover{ border-bottom: 0px solid var(--primary);}
+        text-decoration: var(--border-xs) underline var(--primary);
+        text-underline-position: below;
+        transition: .3s, text-decoration 0s;
+        &:hover{ text-decoration:none; }
     }
 
     figure{
