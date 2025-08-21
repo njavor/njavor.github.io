@@ -80,6 +80,8 @@ header{
     @media only screen and (max-width: 1200px) {
         top: 0;
         width: 100%;
+        max-width: 100%;
+        margin: 0;
         padding-inline: var(--min-sides);
 
         border-top: 0;
