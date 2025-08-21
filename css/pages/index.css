@@ -21,14 +21,13 @@ main{
             font-size: var(--font-m);
         }
     }
+}
 
+@media only screen and (max-width: 1200px) {
+    header{ visibility: visible; }
+    main{
+        display: flex;
 
-    @media only screen and (max-width: 1200px) {
-        header{ visibility: visible; }
-        main{
-            display: flex;
-            
-            #hero{ display: none; }
-        }
+        #hero{ display: none; }
     }
 }
