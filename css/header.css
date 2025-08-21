@@ -78,30 +78,19 @@ header{
     }
 
     @media only screen and (max-width: 1200px) {
-        margin-inline: calc(-1 * var(--space-xs)) auto;
-        width: 78px;
-        flex-direction: column-reverse;
+        top: 0;
+        width: 100%;
+        padding-inline: var(--min-sides);
 
+        border-top: 0;
+        border-inline: 0;
+        border-bottom: var(--border-l) solid var(--borderColor);
+        box-shadow: none;
 
-        #hamburger{ display: flex; }
-        #logolink, nav, #functions{ display: none; }
+        /* #hamburger{ display: flex; } */
+        nav{ display: none; }
 
-        nav ul{
-            writing-mode: sideways-lr;
-            li{
-                &:not(:nth-child(1))::before{
-                    margin: var(--space-s) 0 0 0;
-                }
-            }
-        }
-
-        #functions{
-            margin: 0;
-        }
-
-
-
-        &.open{
+        /* &.open{
             #hamburger{     
                 margin-bottom: 0;
                 
@@ -123,6 +112,6 @@ header{
             nav, #functions, #logolink{
                 display: flex;
             }
-        }
+        } */
     }
 }
