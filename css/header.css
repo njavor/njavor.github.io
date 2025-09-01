@@ -27,7 +27,7 @@ header{
 
         #logo{
             height: var(--logo-size);
-            fill: var(--headerColor);
+            fill: var(--primary);
 
             &:hover{ fill: var(--primary); }
         }

@@ -46,7 +46,7 @@
     --font-headings: "Outfit", sans-serif;
     --font-title: "Outfit", sans-serif;
 
-    --font-code: "Roboto Mono", monospace;
+    --font-code: "Source Code Pro", monospace;
     --font-icon: "Material Symbols Outlined";
 
     --font-regular: 400;
@@ -72,7 +72,8 @@
     
     /* COLORS */
     --white: #efefef;
-    --offwhite: #cfdddc;
+    /* --offwhite: #cfdddc; */
+    --offwhite: #e0ebea;
     --light-gray: #5b6161;
     --gray: #1a1a1a;
     --black: #080808;
