@@ -74,8 +74,20 @@
             scroll-margin-top: var(--space-xxl);
             &:not(:nth-child(1)){ margin-top: var(--space-l); }
         }
+        *:not(h3) + h4{
+            &:not(:nth-child(1)){ margin-top: var(--space-m); }
+        }
 
         > a{ width: fit-content; }
+
+        ol, ul{
+            flex-direction: column;
+
+            li{
+                margin-left: var(--space-s);
+                list-style: inherit;
+            }
+        }
 
         pre code .visszavezetes{
             font-style: normal;
