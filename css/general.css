@@ -84,9 +84,22 @@ details{
 
     summary{
         padding: var(--space-s);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         background: var(--primary);
         color: var(--black);
+
+        &::after{
+            content: "arrow_drop_down";
+            font-family: var(--font-icon);
+            font-size: var(--font-l);
+            transition: .4s;
+        }
     }
+    &:open summary::after { transform: rotate(180deg); }
     
     .details-content{
         border-top: var(--border-def);
@@ -96,9 +109,7 @@ details{
         }
         max-height: 0;
     }
-    &:open{
-        .details-content{ max-height: 100%; }
-    }
+    &:open .details-content{ max-height: 100%; }
 
 
     .code-toolbar{ 
