@@ -44,8 +44,11 @@ p{
 }
 
 blockquote{
-    border-left: var(--border-l) solid var(--primary);
     padding-left: var(--space-s);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+    border-left: var(--border-l) solid var(--primary);
 }
 
 /* Interactive (link, button, accordion) */
@@ -282,6 +285,11 @@ article{
     position: relative;
     box-sizing: border-box;
     padding: var(--space-s);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+
     border: var(--border-def);
     box-shadow: var(--box-shadow-def);
 
