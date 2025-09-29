@@ -302,17 +302,19 @@ article{
         &::before{
             position: absolute;
             aspect-ratio: 1;
-            top: min(10%, var(--space-s));
+            top: min(5%, var(--space-s));
             left: calc(-1 * var(--space-s));
+            width: var(--font-xxl);
             
             padding: var(--space-xs);
             
             display: flex;
+            justify-content: center;
             align-items: center;
             
             color: var(--black);
             font-family: var(--font-icon);
-            font-size: var(--font-xxl);
+            font-size: var(--font-xl);
             
             border: var(--border-def);
             box-shadow: var(--box-shadow-def);
@@ -324,7 +326,7 @@ article{
             border-bottom: 15px solid transparent;
             transform-origin: center;
             
-            top: min(10% + 65px, var(--space-s) + 65px);
+            top: calc(min(5%, var(--space-s)) + var(--font-xxl) + 1.36rem);
             left: calc(-1 * var(--space-s));
         }
         
@@ -333,12 +335,12 @@ article{
             padding-top: var(--space-l);
             
             &::before{
-                left: min(10%, var(--space-s));
+                left: min(5%, var(--space-s));
                 top: calc(-1 * var(--space-s));
             }
             &::after{
-                left: min(10% + 65px, var(--space-s) + 65px);
                 top: calc(-1 * var(--space-s));
+                left: calc(min(5%, var(--space-s)) + var(--font-xxl) + 1.36rem);
                 border: none;
                 border-left: 17px solid var(--black);
                 border-top: 15px solid transparent;

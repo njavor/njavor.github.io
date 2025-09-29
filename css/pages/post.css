@@ -54,7 +54,7 @@
             opacity: var(--opacity-l);
 
             &.current{
-                color: var(--primary);
+                color: var(--primary) !important;
                 opacity: 1;
             }
             &:hover{
