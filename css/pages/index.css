@@ -1,12 +1,15 @@
-header{
-    visibility: hidden;
+header nav ul li:not(:nth-child(1))::before{
+    content: "";
 }
 
 main{
-    justify-self: center;
+    section > div{
+        align-items: center;
+    }
+    /* justify-self: center;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* align-items: flex-start; */
+    align-items: flex-start;
     max-width: var(--max-width);
 
     #hero{
@@ -20,14 +23,68 @@ main{
         a{
             font-size: var(--font-m);
         }
+    } */
+
+    #hero{
+        height: 90vh;
+
+        & > div{
+            height: 90%;
+            justify-content: center;
+        }
+    }
+
+    #things{
+        height: 10vh;
+        padding-block: 0;
+        background: var(--black);
+        border: var(--border-def);
+
+        & > div{
+            height: 100%;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        & a{
+            height: fit-content;
+        }
+    }
+
+    #studies{
+        h2{
+            padding-block: var(--space-s) var(--space-m);
+        }
+        .box{
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            gap: var(--space-m);
+
+            & > img{
+                padding-inline: var(--space-s);
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
+    main{
+        display: flex;
+
+        #hero{ display: none; }
+        #things{
+            height: fit-content;
+            padding-block: inherit var(--space-s);
+            flex-direction: column;
+        }
+    }
+}
+/* @media only screen and (max-width: 1200px) {
     header{ visibility: visible; }
     main{
         display: flex;
 
         #hero{ display: none; }
     }
-}
+} */

@@ -378,6 +378,10 @@ article{
 
 
 /* THEME */
+.bg2{
+    background: var(--bgColor2);
+}
+
 .grid{
     background-size: 48px 48px !important;
     background-image:

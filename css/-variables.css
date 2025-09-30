@@ -115,6 +115,7 @@
 
 :root:has(body.dark){
     --bgColor: var(--gray);
+    --bgColor2: var(--gray);
     --textColor: var(--white);
     --primary: var(--muted-green);
 
