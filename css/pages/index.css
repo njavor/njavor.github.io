@@ -86,7 +86,7 @@ body.dark img{
             }
         }
         #studies > div{
-            div{
+            .box{
                 flex-direction: column;
                 text-align: center;
             }
