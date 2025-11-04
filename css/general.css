@@ -283,6 +283,13 @@ article{
     }
 }
 
+.bold{
+    font-weight: var(--font-bold);
+}
+.icon{
+    font-family: var(--font-icon);
+}
+
 .box{
     position: relative;
     box-sizing: border-box;
