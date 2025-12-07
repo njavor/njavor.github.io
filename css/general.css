@@ -182,7 +182,11 @@ code{
     font-family: var(--font-icon);
 
     opacity: 0;
-    &.show{ opacity: 1; }
+    pointer-events: none;
+    &.show{
+        opacity: 1;
+        pointer-events: all;
+    }
 }
 
 main{
