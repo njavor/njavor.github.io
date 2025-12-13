@@ -406,3 +406,9 @@ article{
     background-image: radial-gradient(rgba(var(--_gridColor, var(--rgb-white)), var(--opacity-xxs)) 1px, transparent 0) !important;
 }
 body:not(.dark){ --_gridColor: var(--rgb-black); }
+
+.hermelin{
+    background-image: url(/img/hermelin-pattern30.png);
+    background-size: var(--space-xl);
+}
+body:not(.dark) .hermelin{ background-image: url(/img/hermelin-pattern30w.png); }
