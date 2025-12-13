@@ -40,9 +40,14 @@ main{
             line-height: 0.8;
             border: solid var(--border-l) var(--borderColor);
 
+            span{
+                font-size: var(--font-m);
+            }
+
             img{
                 height: 40vh;
                 grid-column: 2;
+                filter: none;
             }
         }
     }
