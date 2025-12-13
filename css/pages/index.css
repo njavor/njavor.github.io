@@ -33,9 +33,14 @@ main{
         }
 
         .box{
+            width: 80vw;
+            max-width: var(--max-width);
+
             padding: 0 0 0 var(--space-s);
             display: grid;
+            justify-content: space-between;
             align-items: self-end;
+            
             background: var(--primary);
             line-height: 0.8;
             border: solid var(--border-l) var(--borderColor);
@@ -95,16 +100,6 @@ body.dark img{
     main{
         display: flex;
 
-        #hero{
-            .box{
-                padding: var(--space-s) 0 0 0;
-
-                img{
-                    grid-column: 1;
-                    grid-row: 2;
-                }
-            }
-        }
         #things{
             height: fit-content;
             padding-block: var(--height-header) var(--space-l);
@@ -120,11 +115,24 @@ body.dark img{
         }
     }
 }
-/* @media only screen and (max-width: 1200px) {
-    header{ visibility: visible; }
+@media only screen and (max-width: 1200px) {
     main{
-        display: flex;
+        #hero{
+            .box{
+                width: unset !important;
+                padding: var(--space-s) 0 0 0;
+                gap: 0;
 
-        #hero{ display: none; }
+                h1{
+                    padding-inline: var(--space-m);
+                    z-index: 2;
+                }
+
+                img{
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+            }
+        }
     }
-} */
+}
