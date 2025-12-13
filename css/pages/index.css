@@ -119,7 +119,6 @@ body.dark img{
     main{
         #hero{
             .box{
-                width: unset !important;
                 padding: var(--space-s) 0 0 0;
                 gap: 0;
 
@@ -129,6 +128,8 @@ body.dark img{
                 }
 
                 img{
+                    width: 100%;
+                    height: unset;
                     grid-column: 1;
                     grid-row: 2;
                 }
