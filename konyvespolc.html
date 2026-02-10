@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Könyvespolc
 desc: Egy könyvespolc
 ---
 
@@ -7,18 +8,26 @@ desc: Egy könyvespolc
     <h1>Könyvespolc</h1>
 </div></section>
 
-<section id="books"><div style="flex-direction: row; justify-content: space-around; flex-wrap: wrap;">
-    <a href="https://nemzeti.net/contents/library/01-ALLATIDO.pdf" role="button" target="_blank"><img src="https://s01.static.libri.hu/cover/a5/a/6951642_4.jpg" alt="Orwell: Állatfarm"></a>
-    <a href="https://mek.oszk.hu/00300/00362/00362.pdf" role="button" target="_blank"><img src="https://s01.static.libri.hu/cover/d2/f/3181979_4.jpg" alt="Dante: Isteni színjáték"></a>
-    <a href="https://vmek.oszk.hu/00800/00849/00849.pdf" role="button" target="_blank"><img src="https://alexandra.hu/content/2021/11/Product/9789634797760.jpg" alt="Madách: Az ember tragédiája"></a>
-    <a href="https://www.raio.org/TKMFullText.pdf" role="button" target="_blank"><img src="https://cdn.waterstones.com/bookjackets/large/9781/7847/9781784752637.jpg" alt="Lee: To Kill a Mockingbird"></a>
+<section id="books"><div>
+    <a href="https://dn790002.ca.archive.org/0/items/NineteenEightyFour-Novel-GeorgeOrwell/orwell1984.pdf" role="button" target="_blank"><img src="https://tankmuseumshop.org/cdn/shop/products/1984.jpg" alt="Orwell: 1984"></a>
     <a href="https://mek.oszk.hu/00300/00384/00384.pdf" role="button" target="_blank"><img src="https://lira.erbacdn.net/upload/M_28/rek1/694/781694.jpg" alt="Saint-Exupéry: A kis herceg"></a>
+    <a href="https://nemzeti.net/contents/library/01-ALLATIDO.pdf" role="button" target="_blank"><img src="https://s01.static.libri.hu/cover/a5/a/6951642_4.jpg" alt="Orwell: Állatfarm"></a>
     <a style="pointer-events: none;" role="button" target="_blank"><img src="https://moly.hu/system/covers/big/covers_891431.jpg" alt="Freire: Az elnyomottak pedagógiája"></a>
+    <a href="https://vmek.oszk.hu/00800/00849/00849.pdf" role="button" target="_blank"><img src="https://alexandra.hu/content/2021/11/Product/9789634797760.jpg" alt="Madách: Az ember tragédiája"></a>
+    <a href="https://mek.oszk.hu/00300/00362/00362.pdf" role="button" target="_blank"><img src="https://s01.static.libri.hu/cover/d2/f/3181979_4.jpg" alt="Dante: Isteni színjáték"></a>
+    <a href="https://www.raio.org/TKMFullText.pdf" role="button" target="_blank"><img src="https://cdn.waterstones.com/bookjackets/large/9781/7847/9781784752637.jpg" alt="Lee: To Kill a Mockingbird"></a>
+    <a href="https://archive.org/details/utopiaforrealist0000breg_b4x2" role="button" target="_blank"><img src="https://cdn.prod.website-files.com/66b0c09c22f87b13bdf0cdd2/66b48878b3032aea47b13def_Utopia%20for%20realists.jpg" alt="Bregman: Utopia for realists"></a>
     <!-- <a href="" target="_blank"><img src="" alt=""></a> -->
 </div></section>
 
 
 <style>
+    #books div{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: var(--space-m) var(--space-s);
+    }
     #books div a{
         padding: 0;
         border-width: var(--border-l);

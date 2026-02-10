@@ -1,6 +1,6 @@
 @keyframes toMoon {
-    0%{ rotate: z 0deg;       filter: drop-shadow(2px 2px var(--black));  fill: orange; }
-    10%{ rotate: z 0deg;      filter: drop-shadow(0 0 var(--black));      fill: orange; }
+    0%{ rotate: z 0deg;       filter: drop-shadow(2px 2px var(--black));  fill: var(--yellow); }
+    10%{ rotate: z 0deg;      filter: drop-shadow(0 0 var(--black));      fill: var(--yellow); }
     60%{ rotate: z -425deg;   filter: drop-shadow(0 0 var(--black)); }
     90%{ rotate: z -405deg;   filter: drop-shadow(0 0 var(--black));      fill: var(--white); }
     100%{ rotate: z -405deg;  filter: drop-shadow(2px 2px var(--black));  fill: var(--white); }
@@ -9,8 +9,8 @@
     0%{ rotate: z -405deg;    filter: drop-shadow(2px 2px var(--black));  fill: var(--white); }
     10%{ rotate: z -405deg;   filter: drop-shadow(0 0 var(--black));      fill: var(--white); }
     60%{ rotate: z 20deg;     filter: drop-shadow(0 0 var(--black)); }
-    90%{ rotate: z 0deg;      filter: drop-shadow(0 0 var(--black));      fill: orange; }
-    100%{ rotate: z 0deg;     filter: drop-shadow(2px 2px var(--black));  fill: orange; }
+    90%{ rotate: z 0deg;      filter: drop-shadow(0 0 var(--black));      fill: var(--yellow); }
+    100%{ rotate: z 0deg;     filter: drop-shadow(2px 2px var(--black));  fill: var(--yellow); }
 }
 
 
@@ -42,7 +42,7 @@
         overflow: visible;
     }
     rect#sun{
-        fill:orange;
+        fill:var(--yellow);
         stroke: black;
         stroke-width: 3px;
         filter: drop-shadow(2px 2px black);

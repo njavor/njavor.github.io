@@ -102,7 +102,7 @@ body.dark img{
 
         #things{
             height: fit-content;
-            padding-block: var(--height-header) var(--space-l);
+            padding-block: var(--space-l);
             & > div{
                 flex-direction: column;
             }

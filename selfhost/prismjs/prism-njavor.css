@@ -206,7 +206,7 @@ div.code-toolbar > .toolbar {
   right: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
-  margin: var(--space-xs) var(--space-xs) 0 0;
+  margin: var(--space-s) var(--space-xs) 0 0;
   background: var(--black);
 
   display: flex;
