@@ -10,6 +10,9 @@
         </ul>
     </nav>
     <div id="functions">
+        {% if page.layout == "index" and page.desc == "Honlap. Dolgoknak." %}
+            <a href="https://github.com/njavor" target="_blank"><img src="/img/ico/github.svg" alt="GitHub ikon"></a>
+        {% endif %}
         <button id="theme-button" title="Téma váltás" aria-label="Téma váltás">
             <svg xmlns="http://www.w3.org/2000/svg">
                 <rect id="sun" width="30%" height="30%" x="35%" y="35%"/>
