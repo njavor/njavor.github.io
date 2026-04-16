@@ -1,0 +1,34 @@
+---
+layout: default
+title: Gondolatok
+desc: Egy könyvespolc
+---
+
+<section id="title"><div>
+    <h1>Gondolatok</h1>
+</div></section>
+
+<section id="books"><div>
+    <a href="aprilis12"><article>
+        <img src="/img/gondolatok/aprilis12.png" alt="magyar zászló">
+        <h3>Narancslétől mentes jó reggelt</h3>
+    </article></a>
+</div></section>
+
+
+<style>
+    #books div{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: var(--space-m) var(--space-s);
+    }
+    #books div a{
+        padding: 0;
+        border-width: var(--border-l);
+    }
+    #books div a img{
+        height: 40vh;
+        aspect-ratio: 5 / 8;
+    }
+</style>
