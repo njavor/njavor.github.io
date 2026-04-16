@@ -1,34 +1,35 @@
 ---
 layout: default
 title: Gondolatok
-desc: Egy könyvespolc
+desc: Kikívánkozó gondolatok.
 ---
 
 <section id="title"><div>
-    <h1>Gondolatok</h1>
+    <h1>Narancslémentes szép jó reggelt.</h1>
 </div></section>
 
-<section id="books"><div>
-    <a href="aprilis12"><article>
-        <img src="/img/gondolatok/aprilis12.png" alt="magyar zászló">
-        <h3>Narancslétől mentes jó reggelt</h3>
-    </article></a>
+<section><div>
+    <article>
+        <p>Vége van.</p>
+    </article>
 </div></section>
 
 
 <style>
-    #books div{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: var(--space-m) var(--space-s);
-    }
-    #books div a{
-        padding: 0;
-        border-width: var(--border-l);
-    }
-    #books div a img{
-        height: 40vh;
-        aspect-ratio: 5 / 8;
+    #title{
+        height: 42vh;
+        padding-bottom: 0;
+        background: url(/img/gondolatok/aprilis12.png);
+        background-position: bottom;
+
+        > div{
+            height: 100%;
+            justify-content: flex-end;
+            align-items: center;
+
+            h1{
+                margin-bottom: calc(-1 * var(--space-s));
+            }
+        }
     }
 </style>
