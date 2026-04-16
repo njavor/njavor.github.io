@@ -11,7 +11,7 @@ desc: Kikívánkozó gondolatok.
 <section id="articles"><div>
     <a href="aprilis12">
         <img src="/img/gondolatok/aprilis12.png" alt="magyar zászló">
-        <h2>Narancslétől mentes jó reggelt</h2>
+        <h2>Narancslémentes szép jó reggelt!</h2>
     </a>
 </div></section>
 
@@ -20,8 +20,13 @@ desc: Kikívánkozó gondolatok.
     #title h1{
         text-align: center;
     }
+    @media only screen and (max-width: 800px) {
+        #title h1{
+            margin-bottom: calc(-1 * var(--space-s));
+        }
+    }
 
-    #articles{
+    #articles > div{
         gap: var(--space-l);
 
         a{
