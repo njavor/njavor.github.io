@@ -20,11 +20,6 @@ desc: Kikívánkozó gondolatok.
     #title h1{
         text-align: center;
     }
-    @media only screen and (max-width: 800px) {
-        #title h1{
-            margin-bottom: calc(-1 * var(--space-s));
-        }
-    }
 
     #articles > div{
         gap: var(--space-l);
@@ -50,6 +45,11 @@ desc: Kikívánkozó gondolatok.
                 img{scale: 1.05;}
                 h2{color: var(--primary)}
             }
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        #articles > div a h2{
+            text-align: center;
         }
     }
 </style>
