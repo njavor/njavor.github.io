@@ -145,6 +145,22 @@ li{
 
 
 
+/* Tables */
+table{
+    width: 100;
+    border-collapse: collapse;
+
+    & td, th{
+        padding: var(--space-xs);
+        text-align: center;
+        border: var(--border-s) solid var(--borderColor);
+
+        &th { font-weight: var(--font-bold); }
+    }
+}
+
+
+
 /* IMAGES */
 img, svg{
     display: block;
