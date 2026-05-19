@@ -32,11 +32,12 @@ body{
 
 /* TEXT */
 h1,h2{ font-family: var(--font-title); }
-h2, h3,h4,h5,h6{ font-family: var(--font-headings); }
+h3,h4,h5,h6{ font-family: var(--font-headings); }
 h1{ font-size: var(--font-xxxl); }
 h2{ font-size: var(--font-xxl); }
 h3{ font-size: var(--font-xl); }
 h4{ font-size: var(--font-l); }
+h1,h2,h3,h4,h5,h6{text-wrap-style: balance;}
 
 p{ 
     font-size: var(--font-s);
